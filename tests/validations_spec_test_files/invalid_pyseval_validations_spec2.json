@@ -1,0 +1,15 @@
+{
+    "validations": [
+        {
+            "semantic_model_id": "abc",
+            "dax_query": "abc",
+            "expected_result": [
+                {},
+                {}
+            ],
+            "active": true,
+            "unknown": "abc"
+        }
+    ],
+    "_comment": "invalid pyseval validations spec because and additional unknown property is used in the validation object"
+}

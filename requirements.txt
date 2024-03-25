@@ -1,0 +1,6 @@
+pandas
+jsonschema
+requests
+azure-identity
+click
+python-dotenv

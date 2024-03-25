@@ -1,0 +1,13 @@
+{
+    "validations": [
+        {
+            "dax_query": "abc",
+            "expected_result": [
+                {},
+                {}
+            ],
+            "active": true
+        }
+    ],
+    "_comment": "invalid pyseval validations spec because the validation does not have a semantic_model_id property"
+}

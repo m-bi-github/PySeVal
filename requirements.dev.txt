@@ -1,0 +1,6 @@
+-r requirements.txt
+
+pytest
+pytest-watcher
+ipython
+ipykernel

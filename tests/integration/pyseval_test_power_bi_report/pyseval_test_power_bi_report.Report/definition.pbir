@@ -1,0 +1,9 @@
+{
+  "version": "1.0",
+  "datasetReference": {
+    "byPath": {
+      "path": "../pyseval_test_power_bi_report.Dataset"
+    },
+    "byConnection": null
+  }
+}

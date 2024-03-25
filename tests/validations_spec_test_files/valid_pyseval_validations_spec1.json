@@ -1,0 +1,56 @@
+{
+    "$schema": "https://raw.githubusercontent.com/m-bi-github/pyseval_json_schema/main/pyseval_schema.json",
+    "validations": [
+        {
+            "description": "Passing validation",
+            "semantic_model_id": "c2cf39e6-a43a-471a-a797-95dcf49508a0",
+            "dax_query": "EVALUATE Data",
+            "expected_result": [
+                {
+                    "Data[Color]": "Red",
+                    "Data[Quantity]": 3
+                },
+                {
+                    "Data[Color]": "Red",
+                    "Data[Quantity]": 1
+                },
+                {
+                    "Data[Color]": "Blue",
+                    "Data[Quantity]": 2
+                }
+            ],
+            "active": true
+        },
+        {
+            "description": "Failing validation because the expected result is wrong",
+            "semantic_model_id": "c2cf39e6-a43a-471a-a797-95dcf49508a0",
+            "dax_query": "EVALUATE FILTER(Data, Data[Color] = \"Red\")",
+            "expected_result": [
+                {
+                    "Data[Color]": "Red",
+                    "Data[Quantity]": 1
+                },
+                {
+                    "Data[Color]": "Blue",
+                    "Data[Quantity]": 2
+                },
+                {
+                    "Data[Color]": "Red",
+                    "Data[Quantity]": 3
+                }
+            ],
+            "active": true
+        },
+        {
+            "description": "Passing validation",
+            "semantic_model_id": "c2cf39e6-a43a-471a-a797-95dcf49508a0",
+            "dax_query": "EVALUATE {1}",
+            "expected_result": [
+                {
+                    "[Value]": 1
+                }
+            ],
+            "active": true
+        }
+    ]
+}
